@@ -44,14 +44,14 @@ namespace DutchTreat
             // });
 
 //#if DEBUG
-            // if(env.IsDevelopment())
-            // {
-            //     app.UseDeveloperExceptionPage();
-            // }    
-            // else
-            // {
+            if(env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }    
+            else
+            {
                  app.UseExceptionHandler("/error");
-            // }   
+            }   
 //#endif
 
             //app.UseDefaultFiles();

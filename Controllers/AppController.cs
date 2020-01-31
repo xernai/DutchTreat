@@ -1,4 +1,5 @@
 using System;
+using DutchTreat.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DutchTreat.Controllers
@@ -16,7 +17,13 @@ namespace DutchTreat.Controllers
         {
             ViewBag.Title = "Contact Us";
 
-            throw new InvalidOperationException();
+           // throw new InvalidOperationException();
+            return View();
+        }
+
+        [HttpPost("contact")]
+        public IActionResult Contact(ContactViewModel model )
+        {
             return View();
         }
 
